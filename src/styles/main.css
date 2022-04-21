@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #navigation.active {
+    @apply left-0 w-full sm:w-15
+  }
+  #main.active {
+    @apply left-15 w-[calc(100%-60px)]
+  }
+  #toggle-menu.active {
+    @apply text-white sm:text-inherit left-[calc(100%-60px)] sm:left-auto fixed sm:static
+  }
+  .status {
+    @apply py-0.5 px-1 bg-neutral-200 cursor-default text-white rounded font-medium text-sm tracking-wide
+  }
+  .delivered {
+    @apply bg-green-500
+  }
+  .pending {
+    @apply bg-yellow-400
+  }
+  .return {
+    @apply bg-rose-500
+  }
+  .inprogress {
+    @apply bg-indigo-500
+  }
+  /* scroll */
+  html ::-webkit-scrollbar {
+    @apply bg-neutral-100 w-2 h-2;
+  }
+  html ::-webkit-scrollbar-thumb {
+    @apply rounded-sm bg-blue-400;
+  }
+}
+@layer components {
+  .navigation-item {
+    @apply flex items-center relative w-full
+
+    rounded-tl-full rounded-bl-full cursor-pointer hover:bg-blue-300 transition-colors
+
+    before:transition-shadow before:pointer-events-none
+    before:absolute before:-top-15 before:right-0 before:w-15 before:h-15 before:bg-transparent before:rounded-full before:shadow-blue-400 hover:before:shadow-rounded-top
+
+    after:transition-shadow after:pointer-events-none
+    after:absolute after:-bottom-15 after:right-0 after:w-15 after:h-15 after:bg-transparent after:rounded-full after:shadow-blue-400
+    hover:after:shadow-rounded-bottom
+  }
+}
