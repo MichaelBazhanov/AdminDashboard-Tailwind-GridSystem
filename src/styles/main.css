@@ -39,18 +39,18 @@
   .navigation-item {
     @apply flex items-center relative w-full
 
-    rounded-tl-full rounded-bl-full cursor-pointer hover:bg-blue-300 transition-colors
+    rounded-tl-full rounded-bl-full cursor-pointer hover:bg-white hover:text-blue-400
 
-    before:transition-shadow before:pointer-events-none before:will-change-[box-shadow]
-    before:absolute before:-top-15 before:right-0 before:w-15 before:h-15 before:bg-transparent before:rounded-full before:shadow-blue-400 hover:before:shadow-rounded-top
+    before:pointer-events-none before:will-change-[box-shadow]
+    before:absolute before:-top-15 before:right-0 before:w-15 before:h-15 before:bg-transparent before:rounded-full before:shadow-neutral-100 hover:before:shadow-rounded-top
 
-    after:transition-shadow after:pointer-events-none after:will-change-[box-shadow]
-    after:absolute after:-bottom-15 after:right-0 after:w-15 after:h-15 after:bg-transparent after:rounded-full after:shadow-blue-400
+    after:pointer-events-none after:will-change-[box-shadow]
+    after:absolute after:-bottom-15 after:right-0 after:w-15 after:h-15 after:bg-transparent after:rounded-full after:shadow-neutral-100
     hover:after:shadow-rounded-bottom
   }
 }
 @layer utilities {
   .hovered {
-    @apply bg-blue-300 before:shadow-rounded-top after:shadow-rounded-bottom
+    @apply bg-white text-blue-400 before:shadow-rounded-top after:shadow-rounded-bottom
   }
 }

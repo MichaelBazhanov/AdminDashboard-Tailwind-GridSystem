@@ -25,8 +25,8 @@ module.exports = {
         'me': '0px 3px 20px rgba(0, 0, 0, 0.2)',
         'me-2': '0px 10px 20px -5px rgba(0, 0, 0, 0.1)',
         'me-3': '0px 5px 20px 2px rgba(0, 0, 0, 0.1)',
-        'rounded-top': '30px 30px 0px 0px #93c5fd',
-        'rounded-bottom': '30px -30px 0px 0px #93c5fd',
+        'rounded-top': '30px 30px 0px 0px #fff',
+        'rounded-bottom': '30px -30px 0px 0px #fff',
       },
       animation: {
         'menu-in': 'menu-in 0.3s linear forwards alternate', //infinite
