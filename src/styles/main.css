@@ -49,3 +49,8 @@
     hover:after:shadow-rounded-bottom
   }
 }
+@layer utilities {
+  .hovered {
+    @apply bg-blue-300 before:shadow-rounded-top after:shadow-rounded-bottom
+  }
+}
