@@ -4,7 +4,7 @@ Basic configuration of Webpack.
 
 ## Technologies
 
-	"name": "webpack5-tailwind",
+	"name": "webpack5-tailwind-gridsystem",
 	"version": "1.0.0",
 	"description": "start template",
 	"main": "index.js",
@@ -44,6 +44,7 @@ Basic configuration of Webpack.
 	},
 	"browserslist": "> 0.25%, not dead, not ie <= 11",
 	"dependencies": {
+		"chart.js": "^3.7.1",
 		"jquery": "^3.6.0"
 	}
 
