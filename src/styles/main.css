@@ -27,6 +27,16 @@
   .inprogress {
     @apply bg-indigo-500
   }
+  /* animation padding */
+  #navigation li:not(:nth-child(1)) {
+    @apply hover:px-5 sm:hover:px-0 lg:hover:pl-5 transition-all
+  }
+  #navigation.active li:not(:nth-child(1)) {
+    @apply hover:px-5 sm:hover:px-0
+  }
+  #navigation.active .navigation-item {
+    @apply before:shadow-transparent after:shadow-transparent sm:before:shadow-white sm:after:shadow-white rounded-tr-full rounded-br-full
+  }
   /* scroll */
   html ::-webkit-scrollbar {
     @apply bg-neutral-100 w-2 h-2;
@@ -42,10 +52,10 @@
     rounded-tl-full rounded-bl-full cursor-pointer hover:bg-white hover:text-blue-400
 
     before:pointer-events-none before:will-change-[box-shadow]
-    before:absolute before:-top-15 before:right-0 before:w-15 before:h-15 before:bg-transparent before:rounded-full before:shadow-neutral-100 hover:before:shadow-rounded-top
+    before:absolute before:-top-15 before:right-0 before:w-15 before:h-15 before:bg-transparent before:rounded-full before:shadow-white hover:before:shadow-rounded-top
 
     after:pointer-events-none after:will-change-[box-shadow]
-    after:absolute after:-bottom-15 after:right-0 after:w-15 after:h-15 after:bg-transparent after:rounded-full after:shadow-neutral-100
+    after:absolute after:-bottom-15 after:right-0 after:w-15 after:h-15 after:bg-transparent after:rounded-full after:shadow-white
     hover:after:shadow-rounded-bottom
   }
 }
