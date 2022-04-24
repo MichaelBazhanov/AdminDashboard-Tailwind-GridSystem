@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'production') {
   mode = 'production'
 }
 // закомментировать строку ниже если нужно собрать BUILD локально >>>>>>>>>>>>>>>>>>>>>>>>>
-const publicPath = "/AdminDashboard/"; // https://github.com/MichaelBazhanov/AdminDashboard
+const publicPath = "/AdminDashboard-Tailwind-GridSystem/"; // https://github.com/MichaelBazhanov/AdminDashboard-Tailwind-GridSystem
 
 console.log(mode + ' mode')
 console.log(publicPath + ' publicPath')
@@ -91,5 +91,5 @@ module.exports = {
       },
     ],
   },
-  devtool: 'eval-cheap-module-source-map',
+  devtool: mode === "production" ? "hidden-nosources-source-map" : "eval-cheap-module-source-map",
 }
