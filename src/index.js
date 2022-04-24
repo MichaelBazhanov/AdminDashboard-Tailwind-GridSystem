@@ -20,26 +20,7 @@ window.onload = function () {
     this.classList.add('hovered')
   }
 
-  // //Отслеживаем фокус на элементе
-  // let searchLabel = document.querySelector('.search-label')
-  // let searchItem = document.querySelector('.search-item')
-  // let searchSvg = document.querySelector('.search-svg')
-
-  // console.log(searchLabel)
-  // console.log(searchItem)
-  // console.log(searchSvg)
-  // searchLabel.addEventListener('click', function () {
-  //   searchSvg.classList.add('text-blue-400')
-  // })
-
-  // //Клик в любое место на body
-  // document.querySelector('body').addEventListener('click', function (e) {
-  //   if (e.target != searchItem) {
-  //     searchSvg.classList.remove('text-blue-400')
-  //   }
-  // })
-
-  ///////////////////////////////////////////////////////////////////////////
+  // Chars JS
   const polarAreaCtx = document.getElementById('polarArea')
   const polarArea = new Chart(polarAreaCtx, {
     type: 'polarArea',
