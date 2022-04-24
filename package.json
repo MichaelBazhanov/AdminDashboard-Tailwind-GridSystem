@@ -39,6 +39,7 @@
   },
   "browserslist": "> 0.25%, not dead, not ie <= 11",
   "dependencies": {
+    "chart.js": "^3.7.1",
     "jquery": "^3.6.0"
   }
 }
